@@ -2,7 +2,7 @@ import http from "./Axios";
 //api for task
 const baseUrl = "https://task-intern-web.herokuapp.com";
 //api for behaviour
-const baseUrlAdvice = "http://localhost:8000";
+const baseUrlAdvice = "https://advice-intern-webapp.herokuapp.com";
 
 //for getting all task data
 export  const GetAllTasks = () => http.get(`${baseUrl}/tasks`);
