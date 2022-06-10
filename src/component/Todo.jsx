@@ -43,7 +43,6 @@ function Todo() {
   //deleting task data from database
   async function handleDeleteData(index) {
     let id = taskData[index]._id;
-    console.log(id);
     await DeletetasksById({ id })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
